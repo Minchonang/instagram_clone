@@ -1,0 +1,201 @@
+.modal {
+    font-family: arial;
+}
+
+.modal {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.371);
+    z-index: 40;
+}
+
+.videoModal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.videoModal [alt="큰썸네일"] {
+    height: 100%;
+    border-radius: 1%;
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-aspect-ratio: 1.7) {
+    .modal {
+        width: 80vw;
+        left: 15vw;
+    }
+    .video img {
+        height: 30vw;
+    }
+}
+
+.Text {
+    min-width: 400px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-aspect-ratio: 1.47) {
+    .modal {
+        width: 50vw;
+        left: 25vw;
+    }
+    .Text {
+        display: none;
+    }
+}
+
+.backdrop {
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0.5;
+}
+
+.modaltitle {
+    font-size: 10pt;
+}
+
+.modalheader {
+    border-bottom: 1px solid #c2d8ee;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalheader,
+.modaldesc,
+.modalfooter {
+    padding: 15px;
+}
+
+.modalfooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.closebutton {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+
+    border: none;
+    background-color: white;
+    opacity: 0.7;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modalfooter {
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.secondarybutton {
+    color: #fff;
+    background-color: #6c757d;
+}
+.primarybutton {
+    color: #fff;
+    background-color: #4996e9;
+}
+
+.modalexample {
+    display: flex;
+    /* justify-content: center;
+  align-items: center; */
+    flex-direction: column;
+}
+
+.button {
+    display: flex;
+    color: #6c757d;
+}
+.button:hover {
+    cursor: pointer;
+}
+
+.footerIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footerIcons div:first-child {
+    display: flex;
+    flex-direction: row;
+}
+/* 하단 아이콘들 */
+.footerIcons i {
+    display: block;
+    width: fit-content;
+    padding: 1px;
+    margin-left: 8px;
+}
+/* 중단 댓글 내용들 */
+
+.modaldesc i {
+    position: relative;
+    top: 18px;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.modaldesc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mainTexts {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.mainText {
+    width: 22vw;
+    display: flex;
+}
+.mainText div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+[alt="임시"] {
+    max-width: 50px;
+    max-height: 50px;
+    height: 100%;
+    border-radius: 50%;
+}
+[className="xi-heart-o"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

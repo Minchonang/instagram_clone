@@ -1,0 +1,136 @@
+/* 전체 박스의 크기. */
+.happyCat {
+    position: relative;
+    left: 8vw;
+    width: 30vw;
+    height: 3000px;
+    /* border: 1px black solid; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition-property: left;
+    transition-duration: 0.5s;
+}
+/* 피드전체영역 최소크기 */
+.Feed {
+    position: relative;
+    /* border: 1px black solid; */
+    width: 630px;
+    height: 800px;
+    right: 100px;
+    left: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    transition-property: left;
+    transition-duration: 0.5s;
+    list-style-type: none;
+}
+
+@media (min-width: 800px) {
+    /* 중간크기 */
+    .happyCat {
+        position: relative;
+        left: 105px;
+        display: flex;
+    }
+}
+@media (min-width: 870px) {
+    /* 중간크기 */
+    .Feed {
+        left: 5px;
+    }
+}
+@media (min-width: 1200px) {
+    /* 최대크기 */
+    .happyCat {
+        left: 230px;
+    }
+    .Feed {
+        left: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}
+/* 1개피드영역 */
+.Feed li {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: ; */
+    margin: 5px;
+}
+/* 아이디 게시물  내용물 */
+.Feed li ul {
+    margin: 10px;
+    padding: 3px;
+
+    width: 470px;
+}
+
+.Feed li ul > h3 {
+    /* 게시물제목 */
+    text-align: left;
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 15pt;
+}
+/* 썸네일 */
+.userThum img {
+    border-radius: 50%;
+    width: 33px;
+    position: relative;
+    display: flex;
+    margin-left: 5px;
+}
+.idArea {
+    display: flex;
+}
+.idText {
+    width: auto;
+    display: flex;
+    text-align: left;
+    font-size: 9pt;
+    position: relative;
+    top: 5pt;
+}
+/* xi-check-circle-o */
+.idText div:nth-child(2) {
+    position: relative;
+    top: 5px;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+/* 쇼츠 테두리둥글게 */
+.shorts iframe {
+    border-radius: 1rem;
+}
+/* 피드본문-아이콘 */
+.mainTextIcon {
+    width: 468px;
+    display: flex;
+    justify-content: space-between;
+}
+.mainTextIcon div {
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+}
+/* 피드본문 텍스트 */
+.feedText {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+/* 피드본분 2~3번재줄 */
+.feedText span:first-child {
+    font-style: bold;
+}
+.feedText > span:nth-child(2) {
+    display: flex;
+}
+.feedText > span:nth-child(3) {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.166);
+}

@@ -1,0 +1,155 @@
+/* JS로 숨기고 싶을 때 */
+.hidden {
+    display: none;
+}
+
+/* 오른쪽 항목 전체 영역 */
+.rightSide {
+    display: none;
+    flex-direction: column;
+    flex: 0.5;
+    position: fixed;
+    left: 900px;
+    width: 470px;
+    /* border: 1px dashed skyblue; */
+    margin: 50px 0px 0 0;
+    padding-right: 12px;
+    user-select: none;
+    /* padding-right: 5vw; */
+    z-index: 10;
+}
+/* 1200px일때 오른쪽에서 출현 */
+@media (min-width: 1300px) {
+    .rightSide {
+        display: flex;
+    }
+}
+
+/* <a> 태그 밑줄 제거 */
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* 본인 프로필 전체 영역*/
+.myProfile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 19px;
+    padding-bottom: 5px;
+}
+.myProfile a {
+    flex-direction: row;
+}
+/* 본인 프로필 사진 */
+.profilePhoto {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50vw;
+    margin: 1vw;
+}
+
+/* 회원 추천 텍스트 영역(~모두 보기) */
+.forYouArea {
+    display: flex;
+    flex-direction: row;
+    margin-left: 55px;
+}
+/* '회원님을 위한 추천' */
+.forYou {
+    display: flex;
+    flex: 3;
+    font-weight: bold;
+    color: #737373;
+    font-size: 0.9rem;
+}
+/* 모두 보기 */
+.seeAll {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: end;
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.seeAll:hover {
+    color: #737373;
+}
+
+/* 추천 항목 전체 영역 */
+.userListArea {
+    /* margin: 10vw 5vw; */
+    display: flex;
+    flex-direction: column;
+    padding-right: 80px;
+}
+.listUser {
+    display: flex;
+}
+.listUser {
+    flex: 8;
+}
+/* 추천 유저 프로필 사진(원형) */
+.listUserPhoto {
+    display: flex;
+    /* flex-direction: row; */
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 16px;
+}
+/* 추천 유저 계정+이유 항목 */
+.listUserText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-right: 5px; */
+}
+/* 추천 유저 계정 */
+.listUserId {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #000000;
+}
+/* 추천 유저 추천 이유 */
+.listUserDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #737373;
+}
+/* 추천 유저 팔로우 버튼: 언팔로우 상태 */
+.listFollowBtn {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: end;
+    margin: 30px 0;
+    padding-right: 0;
+    font-size: 0.8rem;
+    /* color: #1977f2; */
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 0px;
+    cursor: pointer;
+}
+
+/* 하단 회색 폰트 소개 */
+.introduce {
+    display: flex;
+    flex-direction: column;
+    margin-left: 19px;
+    padding-left: 39px;
+    color: #c7c7c7;
+    font-size: 0.75rem;
+    cursor: default;
+}
